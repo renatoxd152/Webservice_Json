@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Webservice JSON de um Petshop</h1>
+    <p>Este webservice seria o webservice de um sistema interno de um petshop para gerenciamento de um petshop.</p>
+    <h2>Paginas</h2>
+    <ul>
+        <li><a href="/login.php">login</a></li>
+        <li><a href="/segredo.php">segredo</a></li>
+        <li><a href="/modificaLogin.php">modifica login</a></li>
+        <li><a href="/webservice/animal.php">animal</a></li>
+        <li><a href="/webservice/funcionario.php">funcionario</a></li>
+        <li><a href="/webservice/atende.php">atende</a></li>
+        <li><a href="/webservice/gera.php">gera</a></li>
+        <li><a href="/webservice/procedimento.php">procedimento</a></li>
+    </ul>
+    <h2>Instruções</h2>
+    <p>Todas as paginas apenas podem ser acessadas por um funcionario ou administrador, a verificação é feita após o login ser realizado.</p>
+    <p>
+        Ao tentar realizar o login, caso não exista nenhum usuário cadastrado um usuario administrador será cadastrado e ele poderá cadastrar novos funcionarios. 
+        Funcionarios recém cadastrados pelo admin pela pagina de <a href="/webservice/funcionario.php">funcionario</a> terão um login gerado automaticamente com uma
+        senha de 10 digitos gerada de forma aleatória.
+    </p>
+    <p>Com excessao das consultas apenas os administradores podem deletar e modificar algo. Os funcionarios podem modificar a propria senha de login.</p>
+    <footer>
+        <p>
+            <b>Desenvolvido por: </b>
+            Guilherme Garcia Mancuso - SC3008533 | Renato Porto - SC3014762
+        </p>
+    </footer>
+</body>
+</html>
